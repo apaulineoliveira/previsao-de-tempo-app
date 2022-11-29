@@ -54,6 +54,7 @@ const api = {
       "November",
       "December"
     ];
+    
     let days = [
       "Sunday",
       "Monday",
@@ -64,10 +65,12 @@ const api = {
       "Saturday"
     ];
   
+
     let day = days[d.getDay()];
     let date = d.getDate();
     let month = months[d.getMonth()];
     let year = d.getFullYear();
   
+
     return `${day} ${date} ${month} ${year}`;
   }
