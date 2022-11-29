@@ -3,10 +3,77 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: sans-serif;
-    background: rgb(7, 152, 171);
+    background-image: url(https://cdn.pixabay.com/photo/2017/02/21/09/02/clouds-2085112_1280.jpg);
+    background-repeat: no-repeat;
 }
 
-.app-wrap
+header {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+
+header input {
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    border-bottom: 2px solid #9f9f9f;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+header input:focus {
+    background-color: #003f50;
+    color: white;
+  }
+
+.app-wrap {
+    width: 400px;
+    border-radius: 3px;
+    background-color: white;
+    opacity: 0.7;
+    display: flex;       
+    flex-direction: column;  
+}
+
+main {
+    flex: 1 1 100%;
+    padding: 15px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.location .city {
+    color: #003f50;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.location .date {
+    color:  #003f50;
+    font-size: 16px;
+}
+
+.current .temp {
+    color: #0a6193;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+.current .weather, .current .hi-low {
+    color: #003f50;
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+
+
+  
+  
